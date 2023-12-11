@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <hr>
+
+    <form action="">
+
+        <fieldset>
+            <legend>User Information</legend>
+            <labeL>User Name</labeL>
+            <input type="ram" placeholder="your name" required autofocus>
+
+            <br><br>
+
+            <label>Password</label>
+            <input type="password"> <br><br>
+
+            <label for="">Email</label>
+            <input type="email">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>User Other Information</legend>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender">
+            <lable>Female</lable>
+            <input type="radio" name="gender"><label>Other</label> <br><br>
+            <label for="">Subject</label>
+            <input type="checkbox" id="eng"> <label for="eng">English</label>
+            <input type="checkbox"><label for="">Nepali</label>
+            <input type="checkbox"><label for="">Math</label>
+            <input type="checkbox"><label for="">Science</label>
+            <input type="checkbox"><label for="">Computer</label>
+            <br><br>
+            <label for="">Mobile No</label>
+            <input type="number"> <br><br>
+            <label for="">Date of Brith</label>
+            <input type="date"> <input type="time"> <br><br>
+            <label for="">Favorite Color</label>
+            <input type="color"> <br><br>
+            <label for="">Upload your document</label>
+            <input type="file" multiple> <br><br>
+
+            <label for="">Nationality</label>
+            <input type="text" list="nationality">
+
+            <datalist id="nationality">
+                <option value="Nepalese"> Nepalese</option>
+                <option value="Indian">Indian</option>
+                <option value="Amrican">Amrican</option>
+                <option value="Chinese"> Chinese</option>
+                <option value="Japanese"> Japanese</option>
+                <option value="Neru"> Neru</option>
+                <option value="Indo"> Indo</option>
+                <option value="Afferican"> Afferican</option>
+            </datalist>
+            <br><br>
+
+            <label for="">Language you know</label>
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">Nepali</option>
+                <option value="">Hindi</option>
+                <option value="">Urdu</option>
+                <option value="">Bhojpuri</option>
+                <option value="">Newari</option>
+                <option value="">Maithli</option>
+            </select>
+            <br><br>
+            <label>Full Address</label> <br>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit"> <input type="reset">
+        <button>Accept</button>
+    </form>
+</body>
+
+</html>
