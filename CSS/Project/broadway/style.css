@@ -1,0 +1,175 @@
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color:darkcyan;
+}
+  *{
+    font-family: 'Source Sans 3', sans-serif;
+  }
+header{
+    height: 110px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+
+    padding-top:10px;
+}
+
+.logo{
+    float: left;
+    width: 220px;
+    margin: 0 0 0 180px;
+}
+.all-course{
+    float: left;
+
+    margin: 20px 0 0 40px;
+    
+}
+header .search{
+    float:left;
+
+    margin: 20px 0 0 40px;
+
+    border: 1px solid rgb(206, 205, 205);
+    
+    width: 280px;
+    height: 35px;
+
+    border-radius: 30px;
+}
+header .search .cont-search{
+    border: none;
+    height: 80%;
+    margin: 3px 0 0 5px;
+
+    border-radius: 30px;
+}
+
+.contact{
+    float:left;
+
+    margin: 20px 0 0 40px;
+}
+.send-enquiry{
+    float:left;
+
+    margin: 20px 0 0 40px;
+
+    background-color: var(--primary-color);
+    color:white;
+
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    margin-left: 280px;
+}
+nav ul li{
+    float:left;
+
+    padding: 15px 45px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section{
+    clear: both;
+}
+section .left{
+    width: 35%;
+    height: 500px;
+    background-color:var(--primary-color);
+
+    float: left;
+
+}
+
+section .middle{
+    width: 45%;
+    height: 500px;
+    background-color: #edd30c;
+
+    float: left;
+}
+
+section .middle img{
+    width: 100%;
+    height: 100%;
+}
+
+section .right{
+    width: 20%;
+    height: 500px;
+    background-color: var(--primary-color);
+
+    float: left;
+}
+
+footer{
+    clear: both;
+    height: 60px;
+    background-color: var(--primary-color);
+
+    color: rgb(218, 215, 215);
+    text-align: center;
+    line-height: 60px;
+    border-top: 1px solid white;
+}
+
+section .left{
+    /* border: 2px solid red; */
+}
+section .left .cont{
+    color:white;
+
+    /* border: 1px solid yellow; */
+
+    margin: 80px 0 0 40px;
+}
+
+section .left .cont .heading{
+font-size: 32px;
+font-weight: bold;
+line-height: 40px;
+
+padding-bottom: 30px;
+
+font-family: 'Libre Baskerville', serif;
+
+
+
+}
+
+section .left .cont .sub-head{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+section .left .cont .desc{
+    font-size: 16px;
+    line-height: 25px;
+
+    padding-bottom: 30px;
+}
+
+section .left .cont .admission{
+    background-color: #81E9E6;
+    color: rgb(2, 95, 161);
+    font-weight: bold;
+    width: 170px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}

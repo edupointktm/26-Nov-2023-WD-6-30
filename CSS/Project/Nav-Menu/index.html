@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+       }
+       a{
+        text-decoration: none;
+        color: black;
+       }
+
+       ul li{
+        float:left;
+        width: 210px;       
+        position: relative;
+       
+        background-color: darkcyan;
+        text-align: center;
+       }
+
+       ul ul ul{
+        position: absolute;
+        left:100%;
+        top:0;            
+       }
+
+       ul ul{
+        display: none;
+       }
+      
+       ul li:hover > ul{
+         display: block;
+       }
+
+       ul ul li{
+        text-align: left;
+       }
+
+       ul li a{
+        padding: 10px 10px;
+        display: inline-block;
+       }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/"> <i class="fa-solid fa-house"></i> HOME</a></li>
+        <li><a href="">ABOUT</a>
+           <ul>
+            <li><a href="">School</a></li>
+            <li><a href="">College</a>
+               <ul>
+                <li><a href="">Science</a></li>
+                <li><a href="">Staff</a></li>
+               </ul>
+            </li>
+            <li><a href="">Hospital</a></li>
+           </ul>
+        </li>
+        <li><a href="">SERVICE</a>
+            <ul>
+                <li><a href="">GRAPHICS DESIGN</a></li>
+                <li><a href="">WEB DESIGN</a></li>
+                <li><a href="">MARKETING</a></li>
+                <li><a href="">BRANDING</a>
+                    <ul>
+                        <li><a href="">CORPORATE BRANDING</a></li>
+                        <li><a href="">PERSONAL BRANDING</a></li>
+                        <li><a href="">PLACE BRANDING</a></li>
+                        <li><a href="">DIGITAL BRANDING</a>
+                        <ul>
+                            <li>Mobile</li>
+                            <li>Tab</li>
+                            <li>Laptop</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">CONTACT</a></li>
+    </ul>
+</body>
+</html>
+</body>
+</html>
