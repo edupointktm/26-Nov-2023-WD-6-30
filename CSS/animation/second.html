@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+            border-radius: 50px 0 0 0;
+           
+            animation-name: box_animation;
+            animation-duration: 4s;
+
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes box_animation{
+            0%{left:0; top:0; background-color: purple;}
+            25%{left:600px; top:0; background-color: yellow;}
+            50%{left:600px; top:350px; background-color: blue;}
+            75%{left:0px; top:350px;background-color: palevioletred;}
+            100%{left:0px; top:0px; background-color: darkcyan;}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>

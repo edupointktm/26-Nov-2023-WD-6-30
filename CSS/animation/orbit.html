@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 200px 300px;
+        }
+        .container{
+            
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+
+            animation-name: orbit;
+            animation-duration: 3s;
+
+            animation-timing-function: linear  ;
+            animation-iteration-count: infinite;
+
+           
+
+            border-radius: 50%;
+        }
+
+        .container:hover{
+            animation-play-state: paused;
+        }
+        .box{   
+            width: 80px;
+            height: 80px;
+            border:1px solid black;
+            border-radius: 50%;
+
+            
+        }
+
+        @keyframes orbit {
+            0%{transform: rotate(0);}
+            100%{transform: rotate(365deg);}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    display: flex;
+    padding: 15px 10px;
+    margin: 15px 10px;
+    border-radius: 15px;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #603E9C;
+    color: white;
+}
+
+container{
+    display: flex;
+    background-color:#F1F1F1;
+    justify-content: center;
+    width: 1450px;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    background-color:#F1F1F1;
+    justify-content: space-evenly;
+    width: 1300px;
+    margin: auto;
+
+}
+container .top{
+    display: flex;
+}
+section .top{
+    display: flex;
+}
+container .top .p1 .price{
+    display: flex;
+    gap: 10px;
+}
+section .top .p1 .price{
+    display: flex;
+    gap: 10px;
+}
+container .top .p1 .price .only{
+    background-color: #82E50D;
+    padding: 5px 3px;
+    border-radius: 25%;
+    color: #603E9C;
+}
+section .top .p1 .price .only{
+    background-color: #82E50D;
+    padding: 5px 3px;
+    border-radius: 25%;
+    color: #603E9C;
+}
+container .top .p1 .price .amount{
+    background-color: #603E9C;
+}
+section .top .p1 .price .amount{
+    background-color: #603E9C;
+}
+.above{
+    display: flex;
+    margin: 10px 10px;
+    gap: 10px;
+}
+.p1{
+    background-color: white;
+}
+.image{
+    display: flex;
+}
+
+.amount{
+    display: flex;
+    color: white;
+}
+.list{
+    color:#82E50D;
+    padding-right: 25px;
+}
+.about .info .des{
+    padding: 15px 10px  0 5px;
+    color: #603E9C; 
+}   
+.des{
+    display: flex;
+    justify-content: start;
+    width: 190px;
+}
+.paisa{
+    display: flex;
+    justify-content: start;
+    width: 155px;
+}
+.about .info .paisa{
+    padding: 15px 10px 0 5px;
+    color: #603E9C; 
+}
+.about .option a{
+    text-align: center;
+}
+.rs{
+    font-size: 25px;
+}
+.image img{
+    display: flex;
+    justify-content: center;
+}

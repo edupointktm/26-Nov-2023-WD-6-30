@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #car{
+            width: 200px;  height: 200px;
+            position: absolute;
+            animation-name: car_move;
+            animation-duration: 10s;
+        }
+
+        @keyframes car_move {
+            0%{left:0; top:0; transform: rotate(0deg);}
+            20%{left:500px; top:0; transform: rotate(0deg);}
+
+            25%{left:500px; top:0px;transform: rotate(90deg);}
+           50%{left:500px; top:500px; transform: rotate(90deg);} 
+
+           55%{left:500px; top:500px; transform:rotate(180deg);} 
+           75%{left:0; top:500px;transform: rotate(180deg);} 
+
+           80%{left:0; top:500px; transform: rotate(270deg);} 
+           100%{left:0; top:0px;transform: rotate(270deg);} 
+        }
+
+        
+        /* .box {
+            width: 200px;  height: 200px;  position: absolute;
+            animation-name: car-move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .box img{
+            width: 100%;
+        } */
+        /* @keyframes car-move {
+        0%{left:0;top:0;transform: rotate(0deg);}
+        20%{left:500px;top:0;transform: rotate(0deg);}
+        
+        25%{left:500px;top:0;transform: rotate(90deg);}
+        50%{left:500px;top:500px;transform: rotate(90deg);}
+        
+        55%{left:500px;top:500px;transform: rotate(180deg);}
+        75%{left:0;top:500px;transform: rotate(180deg);}
+        
+        80%{left:0;top:500px;transform: rotate(270deg);}
+        100%{left:0;top:0px;transform: rotate(270deg);} */
+        /* } */
+    
+    </style>
+</head>
+
+<body>
+    <div id="car">
+        <img src="https://media.istockphoto.com/id/1138785358/photo/generic-red-car-top-angle.jpg?s=612x612&w=0&k=20&c=0vuZ57H_Rl4ddgYz0uiv4_f0g2uzEcl2oNSA1s7Vdf0="
+            width="100%" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+        }
+
+        header .container {
+            width: 1300px;
+            margin: auto;
+            /* border: 3px solid rgb(21, 0, 255); */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 30px
+        }
+
+        #slider {
+            background-color: #1ABC9C;
+            text-align: center;
+            color: white;
+        }
+
+        #slider .container .image img {
+            border-radius: 50%;
+        }
+
+        #slider .container .who {
+            padding: 50px 0;
+            font-size: 25px;
+        }
+
+        #slider .container .adventurer {
+            padding: 50px 0;
+            font-size: 35px;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+            justify-content: space-evenly;
+        }
+
+        .gallery {
+            
+            width: 31%;
+        }
+
+        .gallery .image{
+            width: 100%;
+        }
+        .gallery .image img{
+            width: 100%;
+        }
+        .gallery .content{
+            text-align: center;
+            font-size: 14px;
+            color:rgb(137, 136, 136);
+            line-height: 25px;
+            padding-bottom: 15px;
+        }
+
+        #gallery .heading{
+            padding: 45px 0;
+            text-align: center;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ME</div>
+            <nav>
+                <ul>
+                    <li><a href="">WHO</a></li>
+                    <li><a href="">WHAT</a></li>
+                    <li><a href="">WHERE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="slider">
+        <div class="container">
+            <div class="who">Who Am I?</div>
+            <div class="image"><img src="https://www.w3schools.com/bootstrap/bird.jpg" alt=""></div>
+            <div class="adventurer">I'm an adventurer</div>
+        </div>
+    </section>
+
+    <section id="gallery">
+
+        <div class="heading">Where To Find Me? </div>
+        <div class="container">
+            <div class="gallery">
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</div>
+                <div class="image"><img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt=""></div>
+            </div>
+            <div class="gallery">
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</div>
+                <div class="image"><img src="https://www.w3schools.com/bootstrap/birds2.jpg" alt=""></div>
+            </div>
+            <div class="gallery">
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</div>
+                <div class="image"><img src="https://www.w3schools.com/bootstrap/birds3.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

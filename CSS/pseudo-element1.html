@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 250px 200px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin-bottom: 1px;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        .box::before{
+          content: '';
+          width: 150px;
+          height: 150px;
+          background-color: red;  
+          position: absolute;
+         transform: translateX(-70px);
+         
+         border-radius: 50%;
+          
+        }
+
+        .box::after{
+            content: '';
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            transform: translateY(-70px);
+
+            border-radius: 50%;
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    
+</body>
+</html>
