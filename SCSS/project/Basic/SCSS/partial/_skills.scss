@@ -1,0 +1,25 @@
+#skills {
+    .container {
+        width: 1200px;
+        margin: auto;
+
+        .head {
+            @include head();
+
+            .head-line {
+                @include head-line();
+
+            }
+        }
+
+        .content {
+
+            color: $secondary-color;
+        }
+
+        .personal-details {
+            height: 150px;
+            border: 2px solid red;
+        }
+    }
+}

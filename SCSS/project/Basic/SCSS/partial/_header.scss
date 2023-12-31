@@ -1,0 +1,42 @@
+header {
+    background-color: $black;
+
+    .container {
+
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 250px;
+
+            img {}
+        }
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 5px;
+
+                li {
+                    a {
+                        padding: 15px 30px;
+
+                        text-decoration: none;
+                        color: $white;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: yellow;
+                            color: red;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

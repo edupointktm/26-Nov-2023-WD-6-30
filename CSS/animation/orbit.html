@@ -8,23 +8,16 @@
         body{
             margin: 200px 300px;
         }
-        .container{
-            
+        .container{            
             width: 250px;
             height: 250px;
             border: 1px solid black;
-
             animation-name: orbit;
             animation-duration: 3s;
-
             animation-timing-function: linear  ;
             animation-iteration-count: infinite;
-
-           
-
             border-radius: 50%;
         }
-
         .container:hover{
             animation-play-state: paused;
         }
@@ -33,14 +26,11 @@
             height: 80px;
             border:1px solid black;
             border-radius: 50%;
-
-            
         }
 
         @keyframes orbit {
             0%{transform: rotate(0);}
-            100%{transform: rotate(365deg);}
-            
+            100%{transform: rotate(365deg);}            
         }
     </style>
 </head>
