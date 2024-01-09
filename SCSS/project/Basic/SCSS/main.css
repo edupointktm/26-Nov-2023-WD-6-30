@@ -53,11 +53,11 @@ header .container nav ul li a:hover {
   font-size: 35px;
   padding: 20px 0 30px 0;
   font-weight: 700;
-  color: rgb(2, 14, 107);
+  color: rgb(107, 2, 2);
   position: relative;
 }
 #about .container .head .head-line {
-  border-top: 5px solid rgb(2, 14, 107);
+  border-top: 5px solid rgb(107, 2, 2);
   height: 1px;
   width: 40px;
   position: absolute;
@@ -82,11 +82,11 @@ header .container nav ul li a:hover {
   font-size: 35px;
   padding: 20px 0 30px 0;
   font-weight: 700;
-  color: rgb(2, 14, 107);
+  color: rgb(107, 2, 2);
   position: relative;
 }
 #facts .container .head .head-line {
-  border-top: 5px solid rgb(2, 14, 107);
+  border-top: 5px solid rgb(107, 2, 2);
   height: 1px;
   width: 40px;
   position: absolute;
@@ -111,11 +111,11 @@ header .container nav ul li a:hover {
   font-size: 35px;
   padding: 20px 0 30px 0;
   font-weight: 700;
-  color: rgb(2, 14, 107);
+  color: rgb(107, 2, 2);
   position: relative;
 }
 #skills .container .head .head-line {
-  border-top: 5px solid rgb(2, 14, 107);
+  border-top: 5px solid rgb(107, 2, 2);
   height: 1px;
   width: 40px;
   position: absolute;
