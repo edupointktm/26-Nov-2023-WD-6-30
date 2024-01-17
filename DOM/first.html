@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <label for="">Title Name :</label>
+    <input type="text" id="title-name">
+    <button onclick="changeTitle()">Change</button>
+    <hr>
+    <button id="on-off" onclick="onOFF()">ON</button> <br> <br>
+    <img src="https://prabhatmallik.com.np/dom/image/OFF.jpg" id="bulb" alt="" width="25%">
+
+    <script>
+        function changeTitle() {
+            var get_title_name = document.getElementById('title-name').value
+            document.title = get_title_name
+        }
+
+        function onOFF(){
+          var get_name =  document.getElementById('on-off').innerHTML
+
+          if(get_name == "ON"){
+            document.getElementById('on-off').innerHTML="OFF"
+            document.getElementById('bulb').src="https://prabhatmallik.com.np/dom/image/ON.jpg"
+
+          }
+          else{
+            document.getElementById('on-off').innerHTML="ON"
+            document.getElementById('bulb').src="https://prabhatmallik.com.np/dom/image/OFF.jpg"
+
+          }
+          
+        }
+    </script>
+</body>
+
+</html>

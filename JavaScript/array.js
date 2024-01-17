@@ -9,27 +9,27 @@
 
 // console.log("Sum = "+n4)
 
-var n = [9, 6, 9, 8, 7, 2]
+// var n = [9, 6, 9, 8, 7, 2]
 
-//access data from array
-var l = n.length
-var sum=0
-for (i = 0; i < l; i++) {
-    sum =sum + n[i]
-}
-document.write("Sum = "+sum)
+// //access data from array
+// var l = n.length
+// var sum=0
+// for (i = 0; i < l; i++) {
+//     sum =sum + n[i]
+// }
+// document.write("Sum = "+sum)
 
-var large=0
-var smallest=n[0]
-for(){
-
-
-}
+// var large=0
+// var smallest=n[0]
+// for(){
 
 
-var evenCount=0
-var oddCount=0
-for()
+// }
+
+
+// var evenCount=0
+// var oddCount=0
+// for()
 
 
 // var student = ['ram', 'gopal', 'hari', 'prabhat', 'ganesh','rupesh', 'sunil']
@@ -50,31 +50,46 @@ for()
 
 //Multiple data store with key and value
 //Arra of object
-// var student = [
-//     {
-//         names: 'Prabhat Kumar',
-//         address: 'Kathmandu',
-//         mobile_no: '9844027213'
-//     },
-//     {
-//         names: 'Gopal Yadav',
-//         address: 'Janakpur',
-//         mobile_no: '548421545'
-//     },
-//     {
-//         names: 'Janak Dhakal',
-//         address: 'Pokhara',
-//         mobile_no: '154545'
-//     },
-//     {
-//         names: 'Rupesh Yadav',
-//         address: 'Moran',
-//         mobile_no: '5454545'
-//     }
-// ]
-// var l = student.length
-// for (i = 0; i < l; i++) {
-//     document.write(`${student[i].names}  ${student[i].address}  ${student[i].mobile_no} <br>`)
-// }
+var student = [
+    {
+        names: 'Prabhat Kumar',
+        address: 'Kathmandu',
+        mobile_no: '9844027213'
+    },
+    {
+        names: 'Gopal Yadav',
+        address: 'Janakpur',
+        mobile_no: '548421545'
+    },
+    {
+        names: 'Janak Dhakal',
+        address: 'Pokhara',
+        mobile_no: '154545'
+    },
+    {
+        names: 'Rupesh Yadav',
+        address: 'Moran',
+        mobile_no: '5454545'
+    }
+]
+var l = student.length
+document.write(`<table border=1 width=550px>
+        <tr> 
+           <th> Names </th>
+           <th> Address </th>
+           <th> Mobile No </th>
+        </tr>   
+    `)
+for (i = 0; i < l; i++) {
+    document.write(`
+    <tr>
+       <td> ${student[i].names} </td> 
+       <td> ${student[i].address} </td> 
+       <td> ${student[i].mobile_no} </td>
+    </tr>
+    `)
+    
+}
+document.write(`</table>`)
 // console.log(student[2].names)
 

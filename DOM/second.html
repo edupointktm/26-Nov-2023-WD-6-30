@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont{
+            border: 1px solid black;
+            /* display: inline-block; */
+            padding: 20px;
+        }
+
+        .hide{
+            display: none;
+           
+        }
+    </style>
+</head>
+<body>
+    <label>Text color</label>
+    <input type="color" id="text-color" onchange="changeColor()">
+    
+    <label for="">BG-color</label>
+    <input type="color" id="bg-color" onchange="changeBgcolor()">
+
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+
+    <button id="show-hide" onclick="showHide()">Hide</button>
+
+    <br><br>
+    <h3 id="cont">Broadway</h3>
+
+    <script>
+        function changeColor(){
+           var get_color =     document.getElementById('text-color').value
+
+           document.getElementById('cont').style.color=get_color
+        }
+
+        function changeBgcolor(){
+            var get_bg_color = document.getElementById('bg-color').value
+
+            document.getElementById('cont').style.backgroundColor  =get_bg_color          
+        }
+
+        function hide(){
+            document.getElementById('cont').classList.add('hide')
+        }
+        show = ()=>{
+            document.getElementById('cont').classList.remove('hide')
+        }
+
+        showHide = ()=>{
+            var get_name = document.getElementById('show-hide').innerHTML
+
+           if(get_name=="Hide"  ){
+                document.getElementById('show-hide').innerHTML="Show"
+               
+           }
+           else{
+            document.querySelector('#show-hide').innerHTML = "Hide"
+            
+           }
+
+            document.querySelector('#cont').classList.toggle('hide')
+        }
+        
+    </script>
+</body>
+</html>
