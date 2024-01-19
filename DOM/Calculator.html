@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <style>
+        .main{
+    width: 500px;
+    margin: auto;
+    height: 700px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    
+}
+.contentone{
+    text-align: center;
+}
+.t{
+    width: 450px;
+    height: 100px;
+    background-color: aqua;
+    margin-top: 20px;
+    border: 0cap;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    
+}
+.contenttwo{
+    margin-top: 50px;
+}
+.area{
+    margin: auto;
+    width: 450px;
+    height: 500px;
+    background-color: aqua;
+    border: 0cap;
+    border-radius: 10px;
+    
+}
+.first{
+    display: flex;
+    gap: 1px;
+    justify-content: space-evenly;
+    
+    
+    
+}
+button{
+    background-color:rgb(46, 41, 41);
+    color: aqua;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+#Reset{
+    height: 80px;
+    width: 185px;
+}
+#equal{
+    height: 80px;
+    width: 185px;
+}
+#result{
+    background-color: rgb(28, 28, 28);
+    color: white;
+    text-align: end;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="contentone">
+                <input class="t" type="text" id="result">
+            </div>
+            <div class="contenttwo">
+                <div class="area">
+                    <div class="first">
+                        <button onclick="document.querySelector('#result').value += '7' ">7</button>
+                        <button onclick="document.querySelector('#result').value += '8'">8</button>
+                        <button onclick="document.querySelector('#result').value += '9'">9</button>
+                        <button>DEL</button>
+                    </div>
+                    <div class="first">
+                        <button onclick="document.querySelector('#result').value += '4'">4</button>
+                        <button onclick="document.querySelector('#result').value += '5'">5</button>
+                        <button onclick="document.querySelector('#result').value += '6'">6</button>
+                        <button onclick="document.querySelector('#result').value += '+'">+</button>
+                    </div>
+                    <div class="first">
+                        <button onclick="document.querySelector('#result').value += '1'">1</button>
+                        <button onclick="document.querySelector('#result').value += '2'">2</button>
+                        <button onclick="document.querySelector('#result').value += '3'">3</button>
+                        <button onclick="document.querySelector('#result').value += '-'">-</button>
+                    </div>
+                    <div class="first">
+                        <button onclick="document.querySelector('#result').value += '.'">.</button>
+                        <button onclick="document.querySelector('#result').value += '0'">0</button>
+                        <button onclick="document.querySelector('#result').value += '/'">/</button>
+                        <button onclick="document.querySelector('#result').value += '*'">x</button>
+                    </div>
+                    <div class="first">
+                        <button id="Reset" onclick="document.querySelector('#result').value = ''">Reset</button>
+                        <button id="equal" onclick="calculator()">=</button>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculator(){
+            var result = document.querySelector('#result').value
+            
+            document.querySelector('#result').value = eval(result)
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
