@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: inline-block;
+            background-color: lightblue;
+            padding: 25px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button id="animate">Animation</button>
+    <button id="stop">Stop</button>
+    <input type="text" id="msg">
+    <button id="prepend">Prepend</button>
+    <button id="append">Append</button>
+    <button id="after">After</button>
+    <button id="before">Before</button>
+    <br><br>
+    <div class="cont">Broadway</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#animate').click(function(){
+            $('.cont').animate({left:'900px'},3000)
+            
+        })
+
+        $('#stop').click(function(){
+            $('.cont').stop()
+        })
+
+        $('#msg').keyup(function(){
+            let a = $(this).val()
+            $('.cont').html(a)
+        })
+
+        $('#prepend').click(function(){
+            $('.cont').prepend('Welcome ')
+        })
+
+        $('#append').click(function(){
+            $('.cont').append(' Thank You ')
+        })
+
+        $('#before').click(function(){
+            $('.cont').before('Welcome ')
+        })
+
+        $('#after').click(function(){
+            $('.cont').after(' Thank You ')
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .format{
+            font-size: 20px;
+            margin: 5px 3px ;
+            background-color: green;
+            color: white;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1> ODD/EVEN check</h1>
+    <!-- <h4>WAP to ask any one number and display multiplication table of given number</h4> -->
+    <hr>
+    <label for="">Enter your Number</label><br>
+    <input type="number" id = 'number'>
+    <button id="btn-result">Result</button> <br>
+    <div class="lbl-result"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('#btn-result').click(function(){
+          let a = $('#number').val()
+
+          
+          $('.lbl-result').html(multiplicaitonTable(a))
+          $('.lbl-result').addClass('format')
+        })
+
+        multiplicaitonTable= (n)=>{
+            let r=n%2
+            if(r==0){
+                return `${n} is EVEN number`
+            }
+            else{
+                return `${n} is ODD number`
+            }
+        }
+    </script>
+
+</body>
+</html>
