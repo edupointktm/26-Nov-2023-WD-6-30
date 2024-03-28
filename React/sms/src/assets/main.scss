@@ -6,7 +6,9 @@
 body{
     background-color: lightblue;
 }
-
+a{
+    text-decoration: none;
+}
 #slider{
     .slider-cont{
         height: 220px;
@@ -26,5 +28,98 @@ footer{
         padding: 25px;
         margin-top: 5px;
         text-align: center;
+    }
+}
+
+
+.card {
+    background-color: #E6EBF7;
+    border-radius: 15px 15px 10px 10px;
+    margin-bottom: 5px;
+
+    .card-header {
+        background-color: #133580;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 1px solid rgb(151, 150, 150);
+        box-shadow: 0px 5px 4px #315595;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: space-between;
+
+
+        .image {
+            width: 190px;
+            height: 160px;
+            position: relative;
+            padding: 15px 0 0 0 ;
+            
+        .img-title{
+            position: absolute;
+            font-weight: bold;
+            font-size: 14px;
+            color: darkblue;
+            text-align: center;
+            top:-10px;
+            left: 15px;
+            // margin: 15px 0;
+        }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border: 4px solid #133580;
+                object-fit: cover;
+            }
+        }
+
+        .card-content {
+            padding: 0 0 0 20px;           
+            width: 100%;
+
+            .title {
+                padding: 28px 0 0 0;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 900;
+                color: #133580;
+                border-bottom: 5px solid #133580;
+                line-height: 24px;
+                .sub-title {
+
+                    font-size: 16px;
+                    color: gray;
+                    font-weight: 700;
+                    padding: 0 0 5px 0;
+                    text-align: left;
+                }
+            }
+            .card-details{
+                text-align: left;
+                padding: 12px 0 0 0px;
+                color: rgb(78, 77, 77);
+            }
+
+        }
+
+    }
+
+    .card-footers {
+        background-color: #133580;
+        // height: 30px;
+        color: white;
+        padding: 3px 0 5px 0;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        border-top: 3px solid rgb(172, 171, 171);
+        // box-shadow: 0px 5px 4px #315595;
+        border-radius: 0 0 10px 10px;
+        
     }
 }
